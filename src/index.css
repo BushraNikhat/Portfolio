@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth !important;
+}
+body{
+  background-color: #f5f5f5;
+
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden !important;
+  width: 100%;
+  height: auto; 
+
+}
+ 
+
+/* ################  css variables ############################# */
+
+:root {
+  --maroom:#2e0405;
+  --light-maroon:#75060a ;
+}
+
+/* ##########################################  utility-classes ############################################## */
+.large-heading{
+  color: var(--maroom);
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    word-spacing: .2rem;
+    margin-bottom:1.2rem;
+}                /******use with h1 tag */ 
+
+.medium-heading{
+  color: var(--maroom);
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  word-spacing: .2rem;
+  margin-bottom:1.2rem;
+}                 /******use with h2 tag */ 
+.small-heading{
+  color: var(--maroom);
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  word-spacing: .1rem;
+  margin-bottom:1.2rem;
+
+}                  /******use with h3 tag */ 
+.extra-small-heading{
+  color: var(--maroom);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  word-spacing: .1rem;
+  margin-bottom:1.2rem;
+}                      /******use with h4 tag */ 
+
+
+p{
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  word-spacing: .1rem;
+  margin:0px;
+  color:#616060; 
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color: #cac8c8 !important;
+}
+.button{
+  font-size: 1.9rem;
+  display: inline-block;
+  background-color: #c90c0c;
+  padding:.5rem 1rem;
+  margin: 1.2rem 0 1.2rem 0 ;
+  width: 14rem;
+  border-radius: 2rem;
+}
+
+.button:hover{
+  background-color: var(--light-maroon);
+}
+
+/* end of utility classes */
+
+
+/* ############################## decoration of banner starts here ########################################### */
+
+.header{
+  height: 100vh;
+  width: 100%;
+  background:linear-gradient(to right, rgba(0,0,0,0.8) 30%, rgba(0,0,0,.1)) ,url("./Images/banner.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  position: relative;
+} 
+
+
+.header-content-box{
+    height: 100vh;
+    color: white;
+    
+} 
+
+.header-content-box h3,.header-content-box h1{
+  color: white;
+}
+/* ############################## decoration of navbar starts here ########################################### */
+
+.navbar-head{
+  position: fixed;
+  width: 100vw;
+  background-color: var(--maroom);
+  padding: 0px !important;
+  overflow-x: hidden;
+  top:0%;
+  z-index: 3;
+}
+
+
+.navbar-brand img{
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.navbar-toggler{
+  color: white  !important;
+  background-color: white  !important;
+
+}
+.nav-link{
+  color: #fff  !important;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  letter-spacing: .1rem;
+}
+
+
+/* ############################## decoration of about starts here ########################################### */
+
+
+.about,.skills,.portfolio,.contact{
+  width: 100%;
+  padding-top: 8.5rem;
+}
+
+.about .img-col{
+  width: 280px !important;
+  height: 280px !important; 
+}
+.about .self-img{
+    width: 100%;
+    height: 100%;
+    border: 4px solid #c90c0c;
+    
+}
+
+
+
+
+.about-head span{
+  color: #c90c0c;
+}
+
+.about .personal-detail{
+  border: 2px solid #c90c0c;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-top: 1.2rem;
+  position: relative;
+}
+.personal-detail span{
+ 
+  position: absolute;
+  left:40%;
+}
+
+.about button{
+  width: 18rem;
+}
+
+/* ######################### decoration of contact starts here ####################### */
+
+.contact{
+  padding-bottom: 8.5rem;
+}
+.contact-content-para{
+  color: var(--maroom) !important;
+}
+
+/* ###################### decoration of technical skills starts here ######################### */
+
+
+/* ########################## decoration of projects starts here ############################## */
+
+
+.card img{
+  width:100%;
+  height:20rem;
+  
+}
+/* making  overlay of images */
+
+.overlay{
+  
+  position: relative;
+}
+
+.overlay::after{
+  
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.534);
+  opacity:0;
+  z-index: 1;
+  transition: opacity .2s ease-in;
+}
+
+.overlay:hover::after{
+  opacity:1;
+}
+
+
+.overlay-content{
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  position: absolute;
+  top: 50%;
+  left:22%;
+  transform: translate(-50%,-50%);
+  opacity:0;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+}
+
+.overlay:hover .overlay-content{
+  left:50%; 
+  opacity: 1;
+}
+
+
+.overlay-content .btn{
+  background-color:var(--maroom) !important;
+  font-size: 1.8rem !important;
+  padding: .5rem 1rem !important;
+  border-radius: .5rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+  background-color:var(--light-maroon) !important;
+}
+
+
+/* ####################### decoration of footer starts here ################################## */
+
+.footer{
+  background-color:var(--maroom);
+  width: 100%;
+  padding: 2rem 0px;
+ position: relative;
+}
+.footer p{
+  margin-bottom: 1.2rem !important;
+}
+.footer-icon{
+  font-size: 2.2rem !important;
+  margin-right: 1.5rem !important;
+}
+.header-up-btn{
+  
+  position: absolute;
+  right: 1%;
+  bottom: 10%;
+}
+.header-up-btn i{
+  font-size: 3.5rem !important;
+}
+
+
+/* ************************* applying media query for diifernt devices ************************** */
+
+
+/* ################# media query for large devices ############################ */
+
+@media (min-width:992px) and (max-width:1200px){
+  /* ******** header part ******** */
+
+  .header p{
+    letter-spacing: 0px !important;
+  }
+.about,.skills,.portfolio,.contact{
+  padding-top: 8rem;
+}
+.about .img-col{
+  width: 230px !important;
+  height: 270px !important; 
+}
+  /* ******** contact part ******** */
+  .contact-content-para{
+    letter-spacing: 0px !important;
+  }
+  .contact{
+    padding-bottom: 8rem !important;
+  }
+} /* end of large size decoration */
+
+/* ################# media query for medium devices ############################ */
+
+@media (min-width:768px) and (max-width:991px){
+  a{
+    font-size: 1.6rem !important;
+  }
+    /* ****** navbar section ******* */
+    .navbar-brand img{
+      width: 5.5rem;
+      height: 5.5rem;
+    } 
+    .about,.skills,.portfolio,.contact{
+      padding-top: 7rem !important;
+    }
+  /* ****** about section ******* */
+  .about .img-col{
+    height: 270px !important; 
+    width: 220px !important;
+  }
+  .about-left-part{
+    padding-right: 0px !important;
+  }
+  .about-right-part{
+    padding-left: 0px !important;
+  }
+  .about button{
+    width: 14rem !important;
+  }
+
+  /* ********portfolio section******** */
+  .card img{
+    height: 17rem;
+  }
+  .contact{
+    padding-bottom: 7rem !important;
+  }
+
+} /* end ofmedium size decoration */
+
+/* ################# media query for small devices ############################ */
+
+@media (min-width:576px) and (max-width:767px){
+  a{
+    font-size: 1.6rem !important;
+  }
+  p{
+    letter-spacing: 0px !important;
+  }
+  .large-heading{
+    font-size: 3rem !important;
+  }
+  .medium-heading{
+    font-size: 2.4rem !important;
+  }
+ 
+ /* ****** navbar section ******* */
+ .navbar-brand img{
+  width: 5rem;
+  height: 5rem;
+} 
+.navbar-toggler{
+ font-size: 1.2rem !important;
+}
+.about,.skills,.portfolio,.contact{
+  padding-top: 6.5rem;
+}
+ /* ****** about section ******* */
+ .about .img-col{
+  width: 210px !important;
+  height: 220px !important;
+  
+/* display: none !important; */
+}
+
+ /* ****** portfolio section ******* */
+ .card img{
+  height: 17rem;
+}
+
+ /* ****** contact section ******* */
+ .contact{
+   padding-bottom: 6.5rem !important;
+ }
+ .contact-card .card-body{
+   padding:8px !important;
+  
+ }
+/* ****** contact section ******* */
+ .header-up-btn{
+  
+  position: absolute;
+  right: 1%;
+  bottom: 13%;
+  /* color: var(--light-maroon) !important; */
+}
+.header-up-btn i{
+  font-size: 3rem !important;
+}
+}
+
+/* ################# media query for extra small devices ############################ */
+@media (min-width:456px) and (max-width:575px){
+html{
+  font-size: 56.25%;
+}
+p{
+  font-size: 1.6rem !important;
+}
+.extra-small-heading{
+  font-size:1.6rem !important ;
+}
+
+.about,.contact,.portfolio,.skills{
+  padding-top: 7.5rem !important;
+}
+
+.header-content-box p{
+  display: none !important;
+}
+.navbar-brand img{
+  width: 4.8rem;
+  height: 4.8rem;
+}
+ /* ****** about section ******* */
+ .about .img-col{
+  width: 190px !important;
+  height: 210px !important;
+  
+/* display: none !important; */
+}
+
+
+
+}
+
+/* ################# media query for porttait mode ############################ */
+@media (max-width:455px){
+  html{
+    font-size: 50%;
+  }
+  p{
+    font-size: 1.8rem !important;
+    letter-spacing: 0px !important;
+  }
+  .extra-small-heading{
+    font-size: 2rem !important ;
+  }
+  .large-heading{
+    font-size: 3rem !important;
+    color: var(--maroom);
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    margin-bottom:1.5rem;
+  }
+  .navbar-brand img{
+    width: 5rem;
+    height: 5rem;
+  }
+  .navbar-toggler{
+    font-size: 1rem;
+  }
+  .nav-link{
+    font-size: 2rem !important;
+  }
+  .header-content-box p{
+    display: none !important;
+  }
+  .about,.contact,.portfolio,.skills{
+    padding-top: 7rem !important;
+  }
+ /* ****** about section ******* */
+ .about .img-col{
+  width: 170px !important;
+  height:   180px !important;
+  
+}
+  .personal-detail{
+    display: none !important;
+  }
+
+  .contact{
+    padding-bottom: 5rem !important;
+  }
+
+}
+
+/* ################# media query for landscape mode ############################ */
+@media (max-height:500px) and (orientation:landscape){
+  /* html{
+    font-size: 50%;
+  } */
+  
+  .header-content-box{
+    margin-top: 5rem !important;
+  }
+  .header-content-box p{
+    display: none !important;
+  }
+  .about,.contact,.portfolio,.skills{
+    padding-top: 7rem !important;
+  }
+  .about .img-col{
+    width: 180px;
+    height:   180px;
+    
+  }
+
+}
+
+
