@@ -47,7 +47,7 @@ const About = () => {
                       Email<span>: bushranik6@gmail.com</span>
                     </h4>
                   </div>
-                  <button className="btn  button mx-auto d-block"><a href="https://drive.google.com/uc?export=download&id=" className="">Download CV</a></button>
+                  <button className="btn  button mx-auto d-block"><a href="https://drive.google.com/uc?export=download&id=14Yt-Q6WPQIgUATedntqhtGZkU4WDf-dX" className="">Download CV</a></button>
                 </div>
               </div>
             </div>
