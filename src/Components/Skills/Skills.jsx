@@ -29,7 +29,7 @@ const Skills = () => {
                    width={{ width: '75%' }}
                    />
                    <SkillContent icon="fas fa-laptop-code mr-3"
-                   sub="Mern Stack"
+                   sub="React JS"
                    width={{ width: '70%' }}
                    />
                    <SkillContent icon="fab fa-python mr-3"

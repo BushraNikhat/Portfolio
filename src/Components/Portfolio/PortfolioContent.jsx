@@ -2,7 +2,7 @@ import React from "react";
 
 const PortfrolioContent=(props)=>{
     return(<>
-        <div className="col-md-4 col-sm-6 col-10 mx-auto ">
+        <div className="col-md-4 col-sm-6 col-11 mx-auto ">
                 <div className="card portfolio-card  shadow">
                   <div className="overlay">
                     <img src={props.image} className="card-img-top" alt="ecomerce" />

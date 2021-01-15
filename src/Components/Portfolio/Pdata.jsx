@@ -18,7 +18,7 @@ link:"https://github.com/BushraNikhat/Weather-App.git"
 image:Website,
 title:"SINGLE PAGE APP",
 tech:"CSS3, Bootstrap, React JS",
-link:"https://github.com/BushraNikhat/Single-Page-Application.git"
+link:"https://github.com/BushraNikhat/Single-Page-App.git"
 },
 {
 image:Skills,

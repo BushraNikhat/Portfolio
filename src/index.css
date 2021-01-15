@@ -158,8 +158,8 @@ a:hover{
 }
 
 .about .img-col{
-  width: 280px !important;
-  height: 280px !important; 
+  width: 250px !important;
+  height: 270px !important; 
 }
 .about .self-img{
     width: 100%;
@@ -167,9 +167,6 @@ a:hover{
     border: 4px solid #c90c0c;
     
 }
-
-
-
 
 .about-head span{
   color: #c90c0c;
@@ -281,7 +278,7 @@ a:hover{
   margin-bottom: 1.2rem !important;
 }
 .footer-icon{
-  font-size: 2.2rem !important;
+  font-size: 3rem !important;
   margin-right: 1.5rem !important;
 }
 .header-up-btn{
