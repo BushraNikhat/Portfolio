@@ -37,6 +37,7 @@ const Skills = () => {
                    width={{ width: '65%' }}
                    />   
                   
+                  
                 </div>
                 </div>
                 </div>

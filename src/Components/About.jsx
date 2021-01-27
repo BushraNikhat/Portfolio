@@ -27,7 +27,7 @@ const About = () => {
                     About <span>Me</span>
                   </h1>
                   <p className="text-center">
-                 Innovative front end developer passionate about building and maintaining responsive websites, keeping user experience in mind. Proficient in HTML, CSS, JavaScript plus modern libraries and frameworks.
+                 Innovative full stack developer passionate about building and maintaining responsive websites, keeping user experience in mind. Proficient in HTML, CSS, JavaScript plus modern libraries and frameworks.
                   </p>
                   </div>
                   <div className="personal-detail">
